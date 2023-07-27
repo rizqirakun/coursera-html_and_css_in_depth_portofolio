@@ -21,68 +21,81 @@
 
 <body>
     <header>
-        <section>
-            <img src="./assets/Asset 16@4x.png" alt="Little Lemon Logo" />
+        <section class="text-center mb-2">
+            <img src="./assets/Asset 16@4x.png" alt="Little Lemon Logo" id="logo" />
         </section>
-        <nav>
-            <ul>
+        <nav class="flex justify-center items-center w-full">
+            <ul id="navigation">
                 <li>
                     <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="#col-menu">Menu</a>
+                    <a href="#post-menu">Menu</a>
                 </li>
                 <li>
-                    <a href="#col-book">Book</a>
+                    <a href="#post-book">Book</a>
                 </li>
                 <li>
-                    <a href="#col-about">About</a>
+                    <a href="#post-about">About</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <article id="col-banner">
-                <div>
-                    <img src="" alt="">
-                    <h1>Headings</h1>
-                    <p>Some text</p>
+        <section class="mb-3">
+            <article class="banner">
+                <img src="./assets/banner-1.jpg" alt="lemon banner">
+                <div class="banner-center">
+                    <h1>Summer Sale 50%</h1>
+                    <p>Indulge in the essence of Italy with Little Lemon's handcrafted dishes, thoughtfully prepared
+                        using cherished family recipes passed down through generations. Relish the taste of
+                        traditional
+                        Italian favorites, brought to life by Chef Mario's culinary expertise.</p>
                 </div>
             </article>
         </section>
-        <section>
-            <article id="col-menu">
-                <div>
-                    <h2>H2</h2>
-                    <img src="" alt="">
-                    <p>Some text</p>
+        <section id="post-section" class="flex flex-row gap-3 mb-3">
+            <article id="post-menu" class="card">
+                <h2 class="card-title">New Menu</h2>
+                <img src="./assets/post-1.png" alt="sphaggetie image" class="card-img">
+                <div class="card-body">
+                    <p>Indulge in our culinary journey, blending cherished Italian recipes with
+                        Mediterranean innovations.
+                        Savor Bruschetta Shrimp, Truffle Mushroom Risotto, and more. Experience the magic of Italy and
+                        the
+                        Mediterranean at Little Lemon</p>
                 </div>
             </article>
-            <article id="col-book">
-                <div>
-                    <h2>H2</h2>
-                    <img src="" alt="">
-                    <p>Some text</p>
+            <article id="post-menu" class="card">
+                <h2 class="card-title">Book Reservation</h2>
+                <img src="./assets/post-2.png" alt="restaurant image" class="card-img">
+                <div class="card-body">
+                    <p>Reserve your literary escape now! Immerse yourself in captivating stories,
+                        thrilling mysteries, and
+                        heartwarming tales. Discover new worlds and unforgettable characters at our bookstore.</p>
+                    <button class="btn">Reserve Today</button>
                 </div>
             </article>
-            <article id="col-about">
-                <div>
-                    <h2>H2</h2>
-                    <img src="" alt="">
-                    <p>Some text</p>
+            <article id="post-menu" class="card">
+                <h2 class="card-title">Open Hours</h2>
+                <img src="./assets/post-3.jpg" alt="open hour image" class="card-img">
+                <div class="card-body">
+                    <p>Join us during our business hours for a delightful experience! We welcome you from
+                        Monday to
+                        Friday, Sunday. Discover our treasures and enjoy top-notch service. See you
+                        soon!</p>
                 </div>
             </article>
         </section>
     </main>
     <footer>
-        <section>
+        <section class="flex flex-row justify-between mb-3">
             <div>
-                <img src="./assets/Asset 20@4x.png" alt="Little Lemon Small Logo">
+                <img src="./assets/Asset 20@4x.png" alt="Little Lemon Small Logo" width="60">
             </div>
-            <div>
+            <div class="self-end">
                 <hr>
-                Copyright Little Lemon
+                © 2022 Little Lemon | All Rights Reserved
             </div>
         </section>
     </footer>

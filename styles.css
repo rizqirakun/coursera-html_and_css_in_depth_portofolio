@@ -5,6 +5,7 @@
 /* basic */
 :root {
     --primary: #7A9D54;
+    --primary-hover: #648443;
     --accent: #F2EE9D;
     --background: #2C3333;
     --base: #cddece;
@@ -160,6 +161,15 @@ footer {
     color: white;
 }
 
+.btn:hover {
+    background: var(--primary-hover);
+    border: 1px solid var(--primary-hover);
+}
+
+.btn:active {
+    background: var(--accent);
+}
+
 /* utility layout */
 .flex {
     display: flex;
@@ -187,6 +197,24 @@ footer {
 
 .gap-3 {
     gap: 1rem;
+}
+
+/* animate */
+@keyframes scale {
+    from {
+        transform: scale(0);
+        visibility: visible;
+    }
+
+    to {
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+.card {
+    visibility: hidden;
+    animation: scale 500ms ease-in-out forwards;
 }
 
 /* media screen */
